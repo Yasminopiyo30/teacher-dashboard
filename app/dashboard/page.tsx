@@ -58,9 +58,9 @@ export default function Dashboard() {
       {learners.length === 0 ? (
         <div className="rounded-lg bg-white p-8 text-center shadow">
           <p className="text-gray-500">No learners registered yet.</p>
-          <p className="mt-2 text-sm text-gray-400">
-            Click "Add New Learner" to get started.
-          </p>
+         <p className="mt-2 text-sm text-gray-400">
+            {`Click "Add New Learner" to get started.`}
+         </p>   
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -95,3 +95,4 @@ export default function Dashboard() {
     </div>
   );
 }
+
